@@ -1,0 +1,37 @@
+[
+  {
+    "name": "revisor-cafefet-v2:latest",
+    "digest": "8f61ec194db9d50b04af9aee684f5af707898703851e373148d945516ab86248",
+    "size": 3324175470
+  },
+  {
+    "name": "revisor-cafefet-v1:latest",
+    "digest": "952bef5d5bd41667aa900c143bf25321d0f1321120adb7b85cb99146fbab83f9",
+    "size": 3324174990
+  },
+  {
+    "name": "qwen3.5:0.8b",
+    "digest": "de63045f29755d4721c09d54c9b45c2dadb644f4fd7d604d4cac90d96049971c",
+    "size": 1322069277
+  },
+  {
+    "name": "qwen-demo:latest",
+    "digest": "815642c82b5ad43241a6e0ca5dbe69a7e7e878c32964c73d734657fb96c959e0",
+    "size": 3324173998
+  },
+  {
+    "name": "phi4-mini:latest",
+    "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+    "size": 2491876774
+  },
+  {
+    "name": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "size": 3324173934
+  },
+  {
+    "name": "qwen2.5:3b",
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "size": 1929912432
+  }
+]

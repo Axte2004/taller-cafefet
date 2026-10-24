@@ -1,0 +1,13 @@
+/show parameters
+Model defined parameters:
+  num_predict                    700
+  presence_penalty               1.5
+  seed                           42
+  temperature                    0
+  top_k                          20
+  top_p                          0.95
+
+User defined parameters:
+  num_ctx                        512
+
+>>> Send a message (/? for help)

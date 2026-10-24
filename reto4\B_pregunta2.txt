@@ -1,0 +1,1 @@
+Explica en al menos 400 palabras qué es una base de datos relacional y cómo pueden relacionarse estudiantes, productos y pedidos en una cafetería universitaria. Describe tablas, claves, integridad y consultas sin código.

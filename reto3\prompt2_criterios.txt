@@ -1,0 +1,11 @@
+Convierte la historia en 3 a 5 criterios numerados C1, C2, etc., en formato Dado / Cuando / Entonces. Aplica las reglas disponibles; no inventes políticas de disponibilidad, cambios de precio ni reembolsos. Si falta información, lista preguntas aparte. Máximo 350 palabras.
+<reglas>
+- Se reciben pedidos de lunes a sábado, de 7:00 a 18:00.
+- Máximo 5 productos por pedido.
+- Se paga con el saldo del carné; el saldo nunca puede quedar negativo.
+- Los productos agotados no se pueden pedir.
+- Si el pedido no se recoge en 30 minutos, se cancela y se devuelve el saldo.
+</reglas>
+<historia>
+Como estudiante, quiero repetir mi último pedido con un solo clic, para agilizar mi proceso de compra.
+</historia>
