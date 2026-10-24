@@ -1,8 +1,0 @@
-La respuesta previa inventó «se cancela parcialmente el pedido manteniendo solo los artículos disponibles». Esa política NO está autorizada. Corrige sin decidir sustitución, eliminación automática ni confirmación parcial.
-Escribe cinco criterios C1-C5 en máximo 230 palabras:
-C1: repetir con un clic solo si cumple día/horario, máximo 5, disponibilidad y saldo suficiente.
-C2: no aceptar solicitudes fuera de día/horario.
-C3: conserva exactamente esta conclusión: «Entonces no se confirma el pedido tal como fue solicitado; la selección de alternativas queda pendiente de definición». Esto impide confirmar un pedido inválido sin inventar qué alternativa recibe el usuario.
-C4: no aceptar cuando el saldo final sería negativo; saldo final cero está permitido.
-C5: pedido no recogido con plazo de 30 minutos ya vencido, según hito inicial pendiente de definición: cancelar y devolver el saldo.
-En una nota final conserva como preguntas: hora exacta de cierre, definición de último pedido, alternativas si faltan productos e hito inicial de los 30 minutos. No respondas esas preguntas. No agregues otra política.

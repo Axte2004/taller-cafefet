@@ -1,8 +1,0 @@
-Convierte el requisito en una historia de usuario. Devuelve solo una frase con el formato «Como..., quiero..., para...». No agregues funcionalidades.
-Ejemplo propio 1:
-Pedido: Que el estudiante vea su saldo antes de pedir.
-Historia: Como estudiante, quiero consultar el saldo de mi carné antes de pedir, para saber si puedo pagar mi compra.
-Ejemplo propio 2:
-Pedido: Que el personal vea los pedidos pendientes.
-Historia: Como integrante de la cafetería, quiero consultar los pedidos pendientes, para organizar su preparación.
-Requisito: Que el estudiante pueda repetir su último pedido con un solo clic.
