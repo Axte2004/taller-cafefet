@@ -1,0 +1,214 @@
+[
+  {
+    "id": "J1",
+    "mensaje": "Quiero 2 cafés y 1 pan. Recojo a las 09:30. Sin azúcar.",
+    "prompt": "Extrae los datos del mensaje CafeFET respetando el esquema JSON. No inventes datos ausentes: usa null o lista vacía. Productos incluye los productos nombrados incluso en consultas. Usa nombres en singular. Un/una equivale a cantidad 1; una cantidad no mencionada es null. Hora en HH:MM solo si es explícita; más tarde y misma hora no definen hora. Observaciones contiene solo modificaciones explícitas del producto; no las fórmulas de cortesía. Lo de siempre indica repetir, sin permitir reconstruir productos desconocidos.\n<mensaje>Quiero 2 cafés y 1 pan. Recojo a las 09:30. Sin azúcar.</mensaje>",
+    "esperado": {
+      "accion": "pedir",
+      "productos": [
+        {
+          "nombre": "café",
+          "cantidad": 2
+        },
+        {
+          "nombre": "pan",
+          "cantidad": 1
+        }
+      ],
+      "hora_recogida": "09:30",
+      "observaciones": "Sin azúcar."
+    },
+    "respuesta_cruda": "{\n  \"accion\": \"repetir\",\n  \"productos\": [\n    {\n      \"nombre\": \"café\",\n      \"cantidad\": 2\n    },\n    {\n      \"nombre\": \"pan\",\n      \"cantidad\": 1\n    }\n  ],\n  \"hora_recogida\": \"09:30\",\n  \"observaciones\": \"sin azúcar\"\n}",
+    "validacion": true,
+    "datos": {
+      "accion": "repetir",
+      "productos": [
+        {
+          "nombre": "café",
+          "cantidad": 2
+        },
+        {
+          "nombre": "pan",
+          "cantidad": 1
+        }
+      ],
+      "hora_recogida": "09:30",
+      "observaciones": "sin azúcar"
+    },
+    "campos_exactos": {
+      "accion": false,
+      "productos": true,
+      "hora_recogida": true,
+      "observaciones": false
+    },
+    "modelo": "qwen3.5:4b",
+    "fecha": "2026-10-23T20:02:50.827710-05:00",
+    "eval_count": 92,
+    "done_reason": "stop"
+  },
+  {
+    "id": "J2",
+    "mensaje": "Repite mi último pedido para las 12:15.",
+    "prompt": "Extrae los datos del mensaje CafeFET respetando el esquema JSON. No inventes datos ausentes: usa null o lista vacía. Productos incluye los productos nombrados incluso en consultas. Usa nombres en singular. Un/una equivale a cantidad 1; una cantidad no mencionada es null. Hora en HH:MM solo si es explícita; más tarde y misma hora no definen hora. Observaciones contiene solo modificaciones explícitas del producto; no las fórmulas de cortesía. Lo de siempre indica repetir, sin permitir reconstruir productos desconocidos.\n<mensaje>Repite mi último pedido para las 12:15.</mensaje>",
+    "esperado": {
+      "accion": "repetir",
+      "productos": [],
+      "hora_recogida": "12:15",
+      "observaciones": null
+    },
+    "respuesta_cruda": "{\n  \"accion\": \"repetir\",\n  \"productos\": [],\n  \"hora_recogida\": null,\n  \"observaciones\": null\n}",
+    "validacion": true,
+    "datos": {
+      "accion": "repetir",
+      "productos": [],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "campos_exactos": {
+      "accion": true,
+      "productos": true,
+      "hora_recogida": false,
+      "observaciones": true
+    },
+    "modelo": "qwen3.5:4b",
+    "fecha": "2026-10-23T20:02:55.328641-05:00",
+    "eval_count": 38,
+    "done_reason": "stop"
+  },
+  {
+    "id": "J3",
+    "mensaje": "Cancela mi pedido, por favor.",
+    "prompt": "Extrae los datos del mensaje CafeFET respetando el esquema JSON. No inventes datos ausentes: usa null o lista vacía. Productos incluye los productos nombrados incluso en consultas. Usa nombres en singular. Un/una equivale a cantidad 1; una cantidad no mencionada es null. Hora en HH:MM solo si es explícita; más tarde y misma hora no definen hora. Observaciones contiene solo modificaciones explícitas del producto; no las fórmulas de cortesía. Lo de siempre indica repetir, sin permitir reconstruir productos desconocidos.\n<mensaje>Cancela mi pedido, por favor.</mensaje>",
+    "esperado": {
+      "accion": "cancelar",
+      "productos": [],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "respuesta_cruda": "{\n  \"accion\": \"cancelar\",\n  \"productos\": [],\n  \"hora_recogida\": null,\n  \"observaciones\": null\n}",
+    "validacion": true,
+    "datos": {
+      "accion": "cancelar",
+      "productos": [],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "campos_exactos": {
+      "accion": true,
+      "productos": true,
+      "hora_recogida": true,
+      "observaciones": true
+    },
+    "modelo": "qwen3.5:4b",
+    "fecha": "2026-10-23T20:03:00.050402-05:00",
+    "eval_count": 38,
+    "done_reason": "stop"
+  },
+  {
+    "id": "J4",
+    "mensaje": "¿Tienen empanadas disponibles?",
+    "prompt": "Extrae los datos del mensaje CafeFET respetando el esquema JSON. No inventes datos ausentes: usa null o lista vacía. Productos incluye los productos nombrados incluso en consultas. Usa nombres en singular. Un/una equivale a cantidad 1; una cantidad no mencionada es null. Hora en HH:MM solo si es explícita; más tarde y misma hora no definen hora. Observaciones contiene solo modificaciones explícitas del producto; no las fórmulas de cortesía. Lo de siempre indica repetir, sin permitir reconstruir productos desconocidos.\n<mensaje>¿Tienen empanadas disponibles?</mensaje>",
+    "esperado": {
+      "accion": "consultar",
+      "productos": [
+        {
+          "nombre": "empanada",
+          "cantidad": null
+        }
+      ],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "respuesta_cruda": "{\n  \"accion\": \"consultar\",\n  \"productos\": [\n    {\n      \"nombre\": \"empanada\",\"cantidad\": null\n    }\n  ],\n  \"hora_recogida\": null,\n  \"observaciones\": null\n}",
+    "validacion": true,
+    "datos": {
+      "accion": "consultar",
+      "productos": [
+        {
+          "nombre": "empanada",
+          "cantidad": null
+        }
+      ],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "campos_exactos": {
+      "accion": true,
+      "productos": true,
+      "hora_recogida": true,
+      "observaciones": true
+    },
+    "modelo": "qwen3.5:4b",
+    "fecha": "2026-10-23T20:03:06.459634-05:00",
+    "eval_count": 61,
+    "done_reason": "stop"
+  },
+  {
+    "id": "J5",
+    "mensaje": "Quiero un jugo para más tarde.",
+    "prompt": "Extrae los datos del mensaje CafeFET respetando el esquema JSON. No inventes datos ausentes: usa null o lista vacía. Productos incluye los productos nombrados incluso en consultas. Usa nombres en singular. Un/una equivale a cantidad 1; una cantidad no mencionada es null. Hora en HH:MM solo si es explícita; más tarde y misma hora no definen hora. Observaciones contiene solo modificaciones explícitas del producto; no las fórmulas de cortesía. Lo de siempre indica repetir, sin permitir reconstruir productos desconocidos.\n<mensaje>Quiero un jugo para más tarde.</mensaje>",
+    "esperado": {
+      "accion": "pedir",
+      "productos": [
+        {
+          "nombre": "jugo",
+          "cantidad": 1
+        }
+      ],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "respuesta_cruda": "{\n  \"accion\": \"pedir\",\n  \"productos\": [\n    {\n      \"nombre\": \"jugo\",\n      \"cantidad\": null\n    }\n  ],\n  \"hora_recogida\": null,\n  \"observaciones\": null\n}",
+    "validacion": true,
+    "datos": {
+      "accion": "pedir",
+      "productos": [
+        {
+          "nombre": "jugo",
+          "cantidad": null
+        }
+      ],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "campos_exactos": {
+      "accion": true,
+      "productos": false,
+      "hora_recogida": true,
+      "observaciones": true
+    },
+    "modelo": "qwen3.5:4b",
+    "fecha": "2026-10-23T20:03:13.208601-05:00",
+    "eval_count": 62,
+    "done_reason": "stop"
+  },
+  {
+    "id": "J6",
+    "mensaje": "Lo de siempre, a la misma hora.",
+    "prompt": "Extrae los datos del mensaje CafeFET respetando el esquema JSON. No inventes datos ausentes: usa null o lista vacía. Productos incluye los productos nombrados incluso en consultas. Usa nombres en singular. Un/una equivale a cantidad 1; una cantidad no mencionada es null. Hora en HH:MM solo si es explícita; más tarde y misma hora no definen hora. Observaciones contiene solo modificaciones explícitas del producto; no las fórmulas de cortesía. Lo de siempre indica repetir, sin permitir reconstruir productos desconocidos.\n<mensaje>Lo de siempre, a la misma hora.</mensaje>",
+    "esperado": {
+      "accion": "repetir",
+      "productos": [],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "respuesta_cruda": "{\n  \"accion\": \"repetir\",\n  \"productos\": [],\n  \"hora_recogida\": null,\n  \"observaciones\": null\n}",
+    "validacion": true,
+    "datos": {
+      "accion": "repetir",
+      "productos": [],
+      "hora_recogida": null,
+      "observaciones": null
+    },
+    "campos_exactos": {
+      "accion": true,
+      "productos": true,
+      "hora_recogida": true,
+      "observaciones": true
+    },
+    "modelo": "qwen3.5:4b",
+    "fecha": "2026-10-23T20:03:18.089385-05:00",
+    "eval_count": 39,
+    "done_reason": "stop"
+  }
+]
